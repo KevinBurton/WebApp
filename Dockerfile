@@ -24,6 +24,7 @@ WORKDIR /WebApp
 # docker run -rm testing ls -alR
 
 # Test (integration with TeamCity)
+# need a separate build step https://blog.jetbrains.com/teamcity/2017/04/test-net-core-with-teamcity/
 RUN dotnet test tests/tests.csproj
 
 # Publish
