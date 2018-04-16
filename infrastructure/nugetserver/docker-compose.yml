@@ -10,7 +10,7 @@ services:
       - nuget-db:/var/www/db
       - nuget-packages:/var/www/packagefiles
     ports:
-      - 5000:5000
+      - 56000:5000
 
 volumes:
   nuget-db:  
