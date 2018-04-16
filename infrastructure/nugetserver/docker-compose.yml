@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  nugetserver:
+  nuget-server:
     image: sunside/simple-nuget-server
     environment:
       - NUGET_API_KEY=823281825
