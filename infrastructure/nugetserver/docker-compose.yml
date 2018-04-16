@@ -7,7 +7,7 @@ services:
       - NUGET_API_KEY=823281825
       - BASE_URL=/nuget
     volumes:
-      - nuget-db:/var/www/db
+      - nuget-database:/var/www/db
       - nuget-packages:/var/www/packagefiles
     ports:
       - 56000:5000
