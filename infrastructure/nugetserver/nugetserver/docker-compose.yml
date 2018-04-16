@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  nugetserver:
+    image: sunside/simple-nuget-server
+    environment:
+      - NUGET_API_KEY=823281825
+      - BASE_URL=/nuget
+    volumes:
+      - nuget-db:/var/www/db
+      - nuget-packages:/var/www/packagefiles
+    ports:
+      - 5000:5000
+
+volumes:
+  nuget-db:  
+  nuget-packages:
