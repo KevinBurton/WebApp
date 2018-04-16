@@ -24,7 +24,6 @@ WORKDIR /WebApp
 # docker run -rm testing ls -alR
 
 # Test (integration with TeamCity)
-ENV TEAMCITY_PROJECT_NAME=fake
 RUN dotnet test tests/tests.csproj
 
 # Publish
