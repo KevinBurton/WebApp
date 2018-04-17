@@ -13,5 +13,5 @@ services:
       - 56000:5000
 
 volumes:
-  nuget-db:  
+  nuget-database:  
   nuget-packages:
